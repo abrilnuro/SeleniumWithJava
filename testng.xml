@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite-1">
+    <test verbose="2" preserve-order="true" name="Test Case-1">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="LaunchStarbucksCoffeeTest">
+                <methods>
+                    <include name="validateChromePage" />
+                    <include name="validateCoffeeSelection" />
+                    <include name="validateStarbucksRewards"/>
+                </methods>
+            </class>
+            <class name="BaseTest">
+                <methods>
+                    <include name="setupWebDriver" />
+                    <include name="openApplication" />
+                    <include name="deleteAllCookies"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

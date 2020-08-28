@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Test Suite-1]">
+  <test thread-count="5" verbose="0" name="Test Case-1(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="LaunchStarbucksTest">
+        <methods>
+          <include name="validateCoffeeSelection"/>
+          <include name="deleteAllCookies"/>
+          <include name="setupWebDriver"/>
+          <include name="validateChromePage"/>
+        </methods>
+      </class> <!-- LaunchStarbucksTest -->
+    </classes>
+  </test> <!-- Test Case-1(failed) -->
+</suite> <!-- Failed suite [Test Suite-1] -->
